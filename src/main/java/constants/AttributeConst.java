@@ -51,7 +51,7 @@ public enum AttributeConst {
         this.i = i;
     }
 
-    public String getVAlue() {
+    public String getValue() {
         return this.text;
     }
 
