@@ -3,8 +3,6 @@ package actions.views;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.tools.classfile.Annotation.element_value;
-
 import constants.AttributeConst;
 import constants.JpaConst;
 import models.Employee;
@@ -42,9 +40,16 @@ public class EmployeeConverter {
                 e.getCode(),
                 e.getName(),
                 e.getPassword(),
-                e.getAdminFlag(),
+                e.getAdminFlag() == null
                         ? null
                         : e.getAdminFlag() == JpaConst.ROLE_ADMIN
+                                ? AttributeConst.ROLE_ADMIN.getIntegerValue()
+                                : AttributeConst.ROLE_GENERAL.getIntegerValue(),
+                e.getCreatedAt(),
+                e.getUpdatedAt(),
+                e.getDeleteFlag() == null
+                        ? null
+                        : e.getDeleteFlag() == JpaConst.EMP_DEL_TRUE
                                 ? AttributeConst.DEL_FLAG_TRUE.getIntegerValue()
                                 : AttributeConst.DEL_FLAG_FALSE.getIntegerValue());
     }
