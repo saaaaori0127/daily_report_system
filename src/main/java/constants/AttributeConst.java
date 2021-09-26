@@ -24,7 +24,7 @@ public enum AttributeConst {
     EMP_NAME("name"),
     EMP_ADMIN_FLG("admin_flag"),
 
-    ROLE_FLAGADMIN(1),
+    ROLE_ADMIN(1),
     ROLE_GENERAL(0),
 
     DEL_FLAG_TRUE(1),

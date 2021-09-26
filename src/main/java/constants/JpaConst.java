@@ -16,7 +16,7 @@ public interface JpaConst {
     String EMP_COL_ADMIN_FLAG = "admin_flag";
     String EMP_COL_CREATED_AT = "created_at";
     String EMP_COL_UPDATED_AT = "updated_at";
-    String EMP_COL_DELETE_GLAG = "delite_flag";
+    String EMP_COL_DELETE_FLAG = "delite_flag";
 
     int ROLE_ADMIN = 1;
     int ROLE_GENERAL = 0;
@@ -41,16 +41,16 @@ public interface JpaConst {
     String JPQL_PARM_EMPLOYEE = "employee";
 
     String Q_EMP_GET_ALL = ENTITY_EMP + ".getAll";
-    String Q_EMP_GET_ALL_DEF = "SELECT e FROM Employee AS e PRDER BY e.id DESC";
+    String Q_EMP_GET_ALL_DEF = "SELECT e FROM Employee AS e ORDER BY e.id DESC";
 
     String Q_EMP_COUNT = ENTITY_EMP + ".count";
     String Q_EMP_COUNT_DEF = "SELECT COUNT(e) FROM Employee AS e";
 
     String Q_EMP_GET_BY_CODE_AND_PASS = ENTITY_EMP + ".getByCodeAndPass";
-    String Q_EMP_GET_BY_CODE_AND_PASS_DEF = "SELECT e FROM Employee AS e WHERE e.deleteFlag = 0 AND e.code= :" + JPQL_PARM_CODE + "AND e.password = :" +JPQL_PARM_PASSWORD;
+    String Q_EMP_GET_BY_CODE_AND_PASS_DEF = "SELECT e FROM Employee AS e WHERE e.deleteFlag = 0 AND e.code = :" + JPQL_PARM_CODE + " AND e.password = :" + JPQL_PARM_PASSWORD;
 
     String Q_EMP_COUNT_RESISTERED_BY_CODE = ENTITY_EMP + ".countRegisteredByCode";
-    String Q_EMP_COUNT_RESISTERED_BY_CODE_DEF = "SELECT COUNT(e) FROM Employrr AS e WHERE e.code = :" + JPQL_PARM_CODE;
+    String Q_EMP_COUNT_RESISTERED_BY_CODE_DEF = "SELECT COUNT(e) FROM Employee AS e WHERE e.code = :" + JPQL_PARM_CODE;
 
     String Q_REP_GET_ALL = ENTITY_REP + ".getAll";
     String Q_REP_GET_ALL_DEF = "SELECT t FROM Report AS r ORDER BY r.id DESC";
