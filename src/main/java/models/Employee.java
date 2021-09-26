@@ -55,7 +55,7 @@ public class Employee {
     @Column(name = JpaConst.EMP_COL_PASS, length = 64, nullable = false)
     private String password;
 
-    @Column(name = JpaConst.EMP_COL_PASS, length = 64, nullable = false)
+    @Column(name = JpaConst.EMP_COL_ADMIN_FLAG, length = 64, nullable = false)
     private Integer adminFlag;
 
     @Column(name = JpaConst.EMP_COL_CREATED_AT, nullable = false)
