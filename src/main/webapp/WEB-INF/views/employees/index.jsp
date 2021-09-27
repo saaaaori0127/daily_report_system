@@ -11,7 +11,7 @@
 <c:import url="../layout/app.jsp">
     <c:param name="content">
         <c:if test="${flush != null}">
-            <div id=flush_success">
+            <div id="flush_success">
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
@@ -29,7 +29,7 @@
                         <td><c:out value="${employee.name}"/></td>
                         <td>
                             <c:choose>
-                                <c:when test="${employee.deleteFlag == AttributeConst.DEL_FLAG_TRUE.getIntegerValue(}}">
+                                <c:when test="${employee.deleteFlag == AttributeConst.DEL_FLAG_TRUE.getIntegerValue()}">
                                     (削除済み)
                                 </c:when>
                                 <c:otherwise>

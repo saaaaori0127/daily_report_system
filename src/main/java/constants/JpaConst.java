@@ -7,7 +7,7 @@ public interface JpaConst {
 
     int ROW_PER_PAGE = 15;
 
-    String TABLE_EMP = "emoloyees";
+    String TABLE_EMP = "employees";
 
     String EMP_COL_ID = "id";
     String EMP_COL_CODE = "code";
