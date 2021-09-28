@@ -92,7 +92,7 @@ public class EmployeeService extends ServiceBase {
         LocalDateTime today = LocalDateTime.now();
         savedEmp.setUpdatedAt(today);
 
-        List<String> errors = EmployeeValidator.validate(this, savedEmp,  validateCode, validatePass);
+        List<String> errors = EmployeeValidator.validate(this, savedEmp, validateCode, validatePass);
 
         if (errors.size() == 0) {
             update(savedEmp);

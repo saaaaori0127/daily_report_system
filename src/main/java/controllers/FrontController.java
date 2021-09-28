@@ -21,7 +21,8 @@ public class FrontController extends HttpServlet {
         super();
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         ActionBase action = getAction(request, response);
 
         action.init(getServletContext(), request, response);

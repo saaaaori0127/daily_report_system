@@ -2,7 +2,7 @@
 
 body {
     color: #333333;
-    font-family: "Hiragino Kaku Gothic Pro","MS PGothic",Helvetica,Arial,sans-self;
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
 }
 
 #header {
@@ -14,7 +14,7 @@ body {
 #content {
     width: 94%;
     margin-top: 15px;
-    padding-left: 3%
+    padding-left: 3%;
 }
 
 h1 {
@@ -26,21 +26,21 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 
 li {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 p {
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #24738e;
 }
@@ -50,8 +50,8 @@ table, tr, th, td {
 }
 
 table {
-    width: 26%;
-    padding: 10px 2%;
+    width: 100%;
+    table-layout: fixed;
 }
 
 th {

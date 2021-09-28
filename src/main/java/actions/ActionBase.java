@@ -54,7 +54,8 @@ public abstract class ActionBase {
         dispatcher.forward(request, response);
     }
 
-    protected void redirect(ForwardConst action, ForwardConst command) throws ServletException,IOException {
+    protected void redirect(ForwardConst action, ForwardConst command)
+            throws ServletException,IOException {
 
         String redirectUrl = request.getContextPath() + "/?action=" + action.getValue();
         if (command != null) {
