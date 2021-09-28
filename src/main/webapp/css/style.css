@@ -54,6 +54,11 @@ table {
     table-layout: fixed;
 }
 
+tr{
+    width: 100%;
+    padding: 10px 2%;
+}
+
 th {
     width: 26%;
     padding: 10px 2%;
