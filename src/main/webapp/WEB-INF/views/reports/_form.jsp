@@ -21,7 +21,7 @@
 <br/><br/>
 
 <label for="${AttributeConst.REP_TITLE.getValue()}">タイトル</label><br/>
-<input type="text" name="${AttributeConst.REP_CONTENT.getValue()}" value="${report.title}"/>
+<input type="text" name="${AttributeConst.REP_TITLE.getValue()}" value="${report.title}"/>
 <br/><br/>
 
 <label for="${AttributeConst.REP_CONTENT.getValue()}">内容</label><br/>
